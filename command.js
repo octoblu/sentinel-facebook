@@ -3,7 +3,7 @@
 var system  = require('system');
 var helpers = require('./helpers');
 var Casper  = require('casper');
-var casper  = helpers.buildCasper(Casper, 'sentinel-twitter');
+var casper  = helpers.buildCasper(Casper, 'sentinel-facebook');
 
 var FACEBOOK_USERNAME = system.env.FACEBOOK_USERNAME;
 var FACEBOOK_PASSWORD = system.env.FACEBOOK_PASSWORD;
