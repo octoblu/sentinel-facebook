@@ -24,7 +24,11 @@ helpers.thenWithErrors(casper, function() {
     'email': FACEBOOK_USERNAME,
     'pass': FACEBOOK_PASSWORD
   })
-  casper.click("#loginbutton")
+
+  // Wait for JS maybe? Not sure if this makes a difference
+  casper.wait(2000, function(){
+    casper.click("#loginbutton")
+  })
 })
 
 helpers.assertOnOctobluDashboard(casper);
